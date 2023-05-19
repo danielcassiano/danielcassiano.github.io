@@ -1,0 +1,82 @@
+## Construindo o Hello World
+
+Se você tem dedos mais rápidos do que a resposta para esta dúvida, você já deve ter escrito um `npx create-react-app hello-world`, no seu terminal, e, ao quase apertar *Enter*, você hesitou: 
+
+- Será que eu realmente **preciso** usar o React?
+
+E, majoritariamente, não. Você não precisa. Ou precisa!
+
+Vamos discutir sobre como decidir a nossa stack?
+
+### Que tipo de problema você quer resolver neste projeto?
+
+A cada dia, novas tecnologias são lançadas e escolher entre elas pode se tornar uma tarefa árdua. Muitas vezes, tendemos a pegar nossas favoritas para estudar e aplicar aos nossos projetos. Isso é absolutamente normal no processo de aprendizado. Contudo, quando possuímos mais de uma opção em nosso arsenal, qual seria a melhor escolha?
+
+Hoje, compartilharei com você algumas perguntas que faço a mim mesmo para decidir **o que escolher.**
+
+Abaixo, você encontrará uma lista de perguntas e exemplos que utilizo ao escolher tecnologias para um projeto:
+
+### React, Svelte, Vue, Vanilla, ...?
+- Quão grande e complexo o meu projeto é?
+- Preciso de recursos de aprendizado, comunidade, bibliotecas adicionais e uma grande quantidade de soluções para problemas comuns?
+- Vou lidar com estados? Muitos? Prefiro virtualizar a DOM ou escolher o que vai ser reativo, em vez de escolher o que não vai ser reativo?
+- Este projeto será escalável?
+- Quantas pessoas usarão este código? Estas conhecem a pilha de tecnologias que estou planejando?
+- Em quanto tempo este projeto precisa ser executado?
+
+### CSS, TailwindCSS? Bootstrap? MaterialUI? Storybook?
+-   Preciso realmente de um framework CSS?
+    - Vou escrever muitos componentes reutilizáveis?
+        - Qual é o tamanho do meu projeto?
+        - Preciso de um design system?
+            - Como vou mantê-lo? Onde vou hospedá-lo? Ele precisa ser público?
+        - Preciso de um tema dark?
+        - Preciso de um tema light?
+        - Preciso de um tema responsivo?
+
+### Redux? MobX? ContextAPI? Svelte Store? Typescript? JSDoc?
+-   Preciso gerenciar **estados globais** na minha aplicação?
+     - Qual é o tamanho da minha store?
+     - Qual é a complexidade do meu projeto?
+         - Preciso de tipagem?
+              - Preciso documentar e manutenir este projeto a longo prazo? O projeto vai escalar?
+           - A performance é um critério importante?
+
+### Axios? Fetch nativo? Client side? Server side? Static side?
+- Haverão muitas requisições **HTTP** no meu projeto?
+- Preciso de um roteamento? 
+- Consigo arcar com os custos de uma hospedagem do lado do servidor?
+- Preciso mesmo 'evitar' o processo de hydration?
+- O número de requisições chamadas é grande?
+- Posso usar cache para otimizar estas requisições?
+
+### Eslint? Prettier?
+- O projeto tem múltiplos arquivos? Ou é apenas uma lambda?
+
+### Jest? Mocha? Jasmine? React Testing Library? Cypress? Jest? Playwright`
+- Preciso realmente de um test framework?
+- Meus testes serão de unidade, integração, e2e, snapshots, ou driven-development?
+    - Realmente preciso escolher esta modalidade de teste?
+        - Consigo acompanhar as mudanças dos testes? Isto é, se muito mudar, consigo atualizar os testes?
+
+###  Node.js? Firebase? Supabase? LocalStorage? Github Actions? Vercel?
+- Preciso realmente de um servidor back-end?
+    - É um CRUD pequeno?
+    - É um CRUD complexo?
+- Preciso fazer deploy do meu projeto?
+    - Devo hospedar o front-end e o back-end juntos?
+    - Qual serviço de hospedagem devo usar?
+- Preciso de um CI/CD?
+
+### Trello, Asana, Jira, Google Sheets, Scrum, Kambam
+- O projeto tem muitos contribuintes?
+- Qual é a senioridade da equipe?
+- O que funciona melhor, em termos de comunicação, para a equipe?
+- Todos têm horários disponíveis para reuniões?
+- É necessário envolver mais do que a equipe técnica no board?
+
+E lembremos: **as tecnologias mudam todos os dias**, e, que consigamos entender o **porquê** de as utilizarmos, acompanharmos as mudanças das novas techs e não deixarmos as tecnologias nos escolherem, mas, **nós** as escolhermos, para resolvermos os problemas, diante do quão bem ela se adapta ao problema em questão, já que nem todo problema será resolvido amanhã - ou idealmente resolvido - com a tecnologia que adoramos hoje: é importante lembrar que a "última novidade" não é sempre a melhor escolha para cada projeto.
+
+E aí, quais são outras perguntas que vocês poderiam inserir na minha lista?
+
+Compartilha aqui embaixo!
