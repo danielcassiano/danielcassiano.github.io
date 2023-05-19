@@ -7,9 +7,12 @@ function createBlogCards(cards) {
     let card = cards[i];
 
     // Create the main container div for each card
-    let blogCard = document.createElement("div");
+    let blogCard = document.createElement("a");
     blogCard.id = "blog-card";
     blogCard.className = "single-blog";
+    blogCard.href = card.route;
+    blogCard.target = "_blank";
+    blogCard.style.textDecoration = "none";
 
     // Create the inner text container div
     let textContainer = document.createElement("div");
@@ -40,18 +43,12 @@ function createBlogCards(cards) {
 
 let cards = [
   {
-    heading: "Lorem impsum",
-    date: "On April 29, 2023",
+    heading: "Como escolher as tecnologias do seu mais novo projeto?",
+    date: "On May 19, 2023",
     paragraph:
-      "Quisque vel sapi nec lacus adipis cing bibendum nullam porta lites laoreet aliquam.velitest, tempus a ullamcorper et, lacinia mattis mi. Cras arcu nulla, blandit id cursus et, ultricies eu leo.",
-    route: "blog-post-1.html",
-  },
-  {
-    heading: "Lorem impsum",
-    date: "On April 29, 2023",
-    paragraph:
-      "Quisque vel sapi nec lacus adipis cing bibendum nullam porta lites laoreet aliquam.velitest, tempus a ullamcorper et, lacinia mattis mi. Cras arcu nulla, blandit id cursus et, ultricies eu leo.",
-    route: "blog-post-2.html",
+      "A cada dia, novas tecnologias são lançadas e escolher entre elas pode se tornar uma tarefa árdua. Muitas vezes, tendemos a pegar nossas favoritas para estudar e aplicar aos nossos projetos. Isso é absolutamente normal no processo de aprendizado. Contudo, quando possuímos mais de uma opção em nosso arsenal, qual seria a melhor escolha?",
+    route:
+      "https://www.tabnews.com.br/danielchaves/como-escolher-as-tecnologias-do-seu-mais-novo-projeto",
   },
 ];
 
